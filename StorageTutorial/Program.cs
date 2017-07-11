@@ -32,6 +32,7 @@ namespace StorageTutorial
             using (var fileStream = System.IO.File.OpenRead(@"path\myfile"))
             {
                 blockBlob.UploadFromStream(fileStream);
+
             }
         }
     }
