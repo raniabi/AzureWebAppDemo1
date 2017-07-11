@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@using AzureWebApp.Models;
+@model ContactViewModel
+<h2>@ViewBag.Title.</h2>
+@using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+{
+<div class="row">
+    @Html.LabelFor(i => Model.Name)
+    @Html.TextBoxFor(i => Model.Name)
+    <br />
+    @Html.LabelFor(i => Model.EmailID)
+    @Html.TextBoxFor(i => Model.EmailID)
+    <br />
+    @Html.LabelFor(i => Model.Subject)
+    @Html.TextBoxFor(i => Model.Subject)
+    <input type="submit" value="Submit"/>
+</div>
+}
+ 
